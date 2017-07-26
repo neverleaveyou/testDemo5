@@ -1,0 +1,248 @@
+body {
+  font-family: 微软雅黑;
+}
+ul,body{
+  margin:0;
+}
+a{
+  color:#000;
+}
+header{
+  width:100%;
+  height:123px;
+  .top{
+    position: relative;
+    height:37px;
+    background: #f3f3f3;
+    ul{
+      padding: 0;
+      position: absolute;
+      right: 100px;
+      height: 100%;
+      li:hover{
+        cursor: pointer;
+        a{
+          color: #f8bd2d;
+        }
+      }
+      li{
+        list-style: none;
+        float: left;
+        height: 100%;
+        line-height: 37px;
+        padding: 0 20px;
+        border-right: 1px solid #d2d2d2;
+        a{
+          color: #8f8f8f;
+          font-size: 12px;
+        }
+      }
+    }
+
+  }
+  .menu>a,.menu>ul{
+    float: left;
+  }
+  .menu{
+    height:86px;
+    width:1200px;
+    margin:0 auto;
+    line-height: 85px;
+    border-bottom: 1px solid #e5e5e5;
+    img{
+      margin-top: 18px;
+    }
+    ul{
+      li{
+        list-style: none;
+        float: left;
+        padding-left: 20px;
+        padding-right: 20px;
+        cursor: pointer;
+      }
+      li:hover.about,li.about{
+        background-color: #f8bd2d;
+        color:#fff;
+        a{
+          color:#fff;
+        }
+        border-bottom:0;
+      }
+      li:hover,li.current{
+        a{
+          color:#f8bd2d;
+        }
+        border-bottom: 5px solid #f8bd2d;
+      }
+    }
+  }
+}
+.special-container{
+  position: relative;
+  width:1200px;
+  margin:0 auto;
+}
+a{
+  text-decoration: none;
+}
+.contents-container{
+  a{
+    color: #25231f;
+  }
+  position: absolute;
+  top:30px;
+  width:800px;
+  .content-top{
+    border: 1px solid #cfcfcf;
+    background-color: #f6f5f5;
+    .desc{
+      font-size: 14px;
+      padding-left: 20px;
+      padding-bottom: 15px;
+    }
+    h2{
+      margin: 0;
+      padding: 15px 0 15px 20px;
+    }
+    .img{
+      position: relative;
+      .img-desc{
+        position: absolute;
+        top: 14px;
+        background-color: #f8b430;
+        font-size: 20px;
+        color: #fff;
+        width: 107px;
+        height: 33px;
+        line-height: 33px;
+        text-align: center;
+      }
+    }
+    .bottom{
+      height: 40px;
+      line-height: 30px;
+      padding-left: 20px;
+      font-size: 14px;
+      .author{
+        font-weight: bold;
+      }
+      .author,.tags{
+        color: #939392;
+      }
+      .time{
+        margin-right: 20px;
+        color: #c8c5bf;
+      }
+    }
+  }
+  .content-others{
+    h3{
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+    .bottom{
+      font-size: 14px;
+      .author{
+        color:gray;
+      }
+      .time{
+        color:lightgrey;
+      }
+
+    }
+    .tags{
+      color:gray;
+    }
+    a{
+      clear:both;
+      display: block;
+      height:180px;
+      margin-top: 15px;
+      border-bottom: 1px solid #ccc;
+    }
+    img,h3,.bottom,.desc,.tags{
+      float: left;
+    }
+    h3,.bottom,.desc,.tags{
+      width:500px;
+      margin-left: 20px;
+    }
+
+  }
+}
+.contents-container>div:hover h2,.content-others>a:hover h3{
+  color: #f8b72d;
+}
+.tags-container {
+  width: 330px;
+  border: 1px solid rgb(196, 196, 196);
+  padding: 0px 0px 10px;
+  background-color: rgb(252, 252, 252);
+  position: absolute;
+  top:30px;
+  right:0;
+
+  .tag-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #494848;
+    padding-left: 30px;
+    padding-top: 15px;
+
+  }
+  .tag-data {
+    padding-left: 20px;
+    margin-top: 10px;
+    .tag {
+      a {
+        color: #969696;
+        text-decoration: none;
+      }
+      cursor: pointer;
+      color: #969696;
+      font-size: 12px;
+      float: left;
+      width: 85px;
+      height: 30px;
+      line-height: 30px;
+      text-align: center;
+      border: 1px solid rgb(218, 218, 218);
+      border-radius: 6px;
+      margin-right: 15px;
+      margin-bottom: 15px;
+    }
+  }
+}
+
+.tags-container > div {
+  float: left;
+}
+
+.hotArticle-container{
+  width: 330px;
+  border: 1px solid rgb(196, 196, 196);
+  padding: 0px 0px 10px;
+  position: absolute;
+  top:470px;
+  right:0px;
+  ul{
+    padding-left: 20px;
+    li{
+      list-style: none;
+      border-bottom: 1px solid #efefef;
+    }
+  }
+
+  a{
+    text-decoration: none;
+    display: table-cell;
+    width: 294px;
+    height: 50px;
+    font-size: 14px;
+    color: #25231f;
+    vertical-align: middle;
+  }
+  .hotArticle-title{
+    padding-left: 30px;
+  }
+}
